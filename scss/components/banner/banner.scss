@@ -1,0 +1,77 @@
+.banner {
+  @include bg("./../images/mountain.jpeg");
+  height: calc(100vh - var(--header-height));
+  &__title {
+    width: 100%;
+    font-weight: 300px;
+    max-width: 720px;
+    text-transform: capitalize;
+    color: $content-color;
+  }
+
+  &__play {
+    margin-top: 50px;
+    svg {
+      fill: $content-color;
+      &:hover {
+        fill: $sunshine-color;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 50px;
+    a {
+      background-color: $background-button;
+      &:hover {
+        background-color: $sunshine-color;
+      }
+    }
+  }
+
+  #banner__open-video {
+    background: rgba(72, 71, 71, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+
+    &:target {
+      display: block;
+    }
+
+    .window {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+
+      iframe {
+        border: 2px solid;
+        border-color: $sunshine-color;
+        border-radius: 20px;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        height: 90%;
+      }
+    }
+    .close {
+      margin: 10px 0 10px;
+
+      &__btn {
+        text-decoration: none;
+        background: $background-button;
+        font-size: 14pt;
+        &:hover {
+          background: $sunshine-color;
+        }
+      }
+    }
+  }
+}

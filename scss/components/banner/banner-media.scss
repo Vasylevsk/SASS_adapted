@@ -1,0 +1,36 @@
+@include laptop {
+  .banner {
+    #banner__open-video {
+      .window {
+        iframe {
+          margin-top: 40px;
+          height: 80%;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .banner {
+    #banner__open-video {
+      .window {
+        iframe {
+          height: 60%;
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+  .banner {
+    #banner__open-video {
+      .window {
+        iframe {
+          height: 50%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.about {
+  height: 100vh;
+  margin: 40px 0 40px 0;
+  color: $menu-color;
+  background-color: $content-color;
+  &__content {
+    background-color: $sunshine-color;
+    padding: 30px;
+    margin: 20px;
+    h2 {
+      margin-bottom: 20px;
+      color: $content-color;
+    }
+  }
+}

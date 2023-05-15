@@ -1,0 +1,10 @@
+@include tablet {
+  .media {
+    ul {
+      flex-direction: column;
+      li {
+        margin-top: 20px;
+      }
+    }
+  }
+}
